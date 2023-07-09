@@ -8,4 +8,5 @@ for (let i = 0; i < 5; i++) {
   products += `<div>${name}</div>`;
 }
 
+// when this code is run inside the Container, the ID needs to be present inside the container as well
 document.querySelector("#dev-products").innerHTML = products;
