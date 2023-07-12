@@ -5,4 +5,7 @@
 // if webpack can not find a "products" dependency in node_modules, then it takes a look at the ModuleFederationPlugin remotes property
 import "products/ProductsIndex"; // imports ProductsIndex module from Products (Remote)
 
+// same for cart module
+import "cart/CartShow";
+
 console.log("container");
