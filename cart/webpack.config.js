@@ -13,6 +13,7 @@ module.exports = {
       exposes: {
         "./CartShow": "./src/index",
       },
+      shared: ["faker"], // if remotes use the same dependency, this will only load it once, but might break if loading these modules independently
     }),
     new HtmlWebpackPlugin({
       template: "./public/index.html",
