@@ -1,5 +1,2 @@
-import faker from "faker";
-
-const cartText = `<div>You have ${faker.random.number()} items in your cart`;
-
-document.querySelector("#cart-dev").innerHTML = cartText;
+// give webpack the ability to load up async the bootstrap.js file
+import("./bootstrap");
