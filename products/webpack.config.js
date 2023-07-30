@@ -11,7 +11,7 @@ module.exports = {
       name: "products",
       filename: "remoteEntry.js", // lists the different modules that can be loaded from the Products project
       exposes: {
-        "./ProductsIndex": "./src/index",
+        "./ProductsIndex": "./src/bootstrap",
       },
       shared: ["faker"], // if remotes use the same dependency, this will only load it once, but might break if loading these modules independently
     }),

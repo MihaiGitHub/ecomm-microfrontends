@@ -11,7 +11,7 @@ module.exports = {
       name: "cart",
       filename: "remoteEntry.js",
       exposes: {
-        "./CartShow": "./src/index",
+        "./CartShow": "./src/bootstrap",
       },
       shared: ["faker"], // if remotes use the same dependency, this will only load it once, but might break if loading these modules independently
     }),
